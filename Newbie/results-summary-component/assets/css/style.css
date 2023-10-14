@@ -1,5 +1,7 @@
 @charset "UTF-8";
 
+/* PRINCIPAL */
+
 * {
     padding: 0px;
     margin: 0px;
@@ -9,25 +11,45 @@
 section.main {
     display: flex;
     justify-content: center;
-    margin: 100px;
-        
+    margin: 100px;    
 }
 
+/* CARD RESULT */
+
 .result {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+    width: 300px;
+    height: 500px;
     background: linear-gradient(#0000ff, rgb(68, 68, 190));
     text-align: center;
     border-radius: 15px;
-    align-content: space-between;
 }
 
- .circle {
+span.grey {
+    color: #707070;
+}
+
+.circle {
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    flex-wrap: wrap;
     background-color: rgb(85, 0, 255);
     border-radius: 50%;
     width: 200px;
     height: 200px;
-    
+}
+
+.circle h3 {
+    font-size: 2.3rem;
+}
+
+/* RODAPE */
+
+footer {
+    text-align: center;
 }
